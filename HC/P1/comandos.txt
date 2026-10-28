@@ -1,0 +1,6 @@
+octave:105> diary on
+octave:106> a = 10
+a = 10
+octave:107> b = 15;
+octave:108> z = sqrt(a);
+octave:109> diary off
