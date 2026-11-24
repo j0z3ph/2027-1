@@ -8,6 +8,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         QMainWindow.__init__(self, *args, **kwargs)
         self.setupUi(self)
         
+        self.actionSalir.triggered.connect(self.close)
+        
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
     window = MainWindow()
