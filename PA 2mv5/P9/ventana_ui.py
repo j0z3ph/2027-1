@@ -53,9 +53,15 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
-        self.actionAbrir.setText(QCoreApplication.translate("MainWindow", u"Abrir", None))
-        self.actionCerrar.setText(QCoreApplication.translate("MainWindow", u"Cerrar", None))
-        self.actionSalir.setText(QCoreApplication.translate("MainWindow", u"Salir", None))
-        self.menuArchivo.setTitle(QCoreApplication.translate("MainWindow", u"Archivo", None))
+        self.actionAbrir.setText(QCoreApplication.translate("MainWindow", u"A&brir", None))
+#if QT_CONFIG(shortcut)
+        self.actionAbrir.setShortcut(QCoreApplication.translate("MainWindow", u"Meta+N", None))
+#endif // QT_CONFIG(shortcut)
+        self.actionCerrar.setText(QCoreApplication.translate("MainWindow", u"&Cerrar", None))
+        self.actionSalir.setText(QCoreApplication.translate("MainWindow", u"&Salir", None))
+#if QT_CONFIG(shortcut)
+        self.actionSalir.setShortcut(QCoreApplication.translate("MainWindow", u"Ctrl+X", None))
+#endif // QT_CONFIG(shortcut)
+        self.menuArchivo.setTitle(QCoreApplication.translate("MainWindow", u"&Archivo", None))
     # retranslateUi
 

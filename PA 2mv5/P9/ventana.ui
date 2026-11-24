@@ -25,7 +25,7 @@
    </property>
    <widget class="QMenu" name="menuArchivo">
     <property name="title">
-     <string>Archivo</string>
+     <string>&amp;Archivo</string>
     </property>
     <addaction name="actionAbrir"/>
     <addaction name="actionCerrar"/>
@@ -36,17 +36,23 @@
   </widget>
   <action name="actionAbrir">
    <property name="text">
-    <string>Abrir</string>
+    <string>A&amp;brir</string>
+   </property>
+   <property name="shortcut">
+    <string>Meta+N</string>
    </property>
   </action>
   <action name="actionCerrar">
    <property name="text">
-    <string>Cerrar</string>
+    <string>&amp;Cerrar</string>
    </property>
   </action>
   <action name="actionSalir">
    <property name="text">
-    <string>Salir</string>
+    <string>&amp;Salir</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
    </property>
   </action>
  </widget>
